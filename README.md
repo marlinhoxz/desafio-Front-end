@@ -1,30 +1,37 @@
 # Desafio Front-end
 
-Projeto desenvolvido como parte de um desafio de front-end, com o objetivo de colocar em prática conceitos de desenvolvimento web, componentização e construção de interfaces utilizando Next.js.
+Projeto desenvolvido como parte de um desafio de Front-end, com o objetivo de praticar desenvolvimento de interfaces, componentização e organização de projetos utilizando **Next.js, React e TypeScript**.
 
 ## Sobre o projeto
 
-Este projeto está sendo desenvolvido para praticar e aprimorar habilidades em desenvolvimento front-end, explorando a criação de uma interface organizada, responsiva e com foco na experiência do usuário.
+O projeto está sendo desenvolvido a partir de um desafio de Front-end, buscando reproduzir a interface proposta e aplicar boas práticas de desenvolvimento.
 
-A proposta é transformar o desafio proposto em uma aplicação funcional, aplicando boas práticas de estruturação de componentes e estilização.
+Durante o desenvolvimento, estou colocando em prática conceitos como:
+
+* Componentização com React;
+* Organização de projetos com Next.js;
+* Tipagem com TypeScript;
+* Estilização utilizando CSS Modules;
+* Criação de layouts responsivos;
+* Organização e reutilização de componentes.
 
 ## Tecnologias utilizadas
 
 * [Next.js](https://nextjs.org/)
 * React
 * TypeScript
-* CSS / CSS Modules
-* Git e GitHub
+* CSS Modules
+* Git
+* GitHub
 
 ## Funcionalidades
-
-> Esta seção será atualizada conforme o desenvolvimento do projeto.
 
 * [ ] Implementação da interface proposta pelo desafio
 * [ ] Layout responsivo
 * [ ] Componentização da interface
+* [ ] Interações da interface
 * [ ] Ajustes de acessibilidade
-* [ ] Refinamento visual e de experiência do usuário
+* [ ] Refinamento visual
 
 ## Como executar o projeto
 
@@ -32,8 +39,8 @@ A proposta é transformar o desafio proposto em uma aplicação funcional, aplic
 
 Antes de começar, você precisa ter instalado:
 
-* Node.js
-* npm, yarn, pnpm ou bun
+* [Node.js](https://nodejs.org/)
+* npm
 
 ### Instalação
 
@@ -61,21 +68,31 @@ Execute o servidor de desenvolvimento:
 npm run dev
 ```
 
-Abra http://localhost:3000 no navegador para visualizar o projeto.
+Acesse no navegador:
+
+```text
+http://localhost:3000
+```
 
 ## Estrutura do projeto
 
+O projeto utiliza o **App Router do Next.js**, mantendo as páginas dentro de `app` e os componentes reutilizáveis separados em `components`.
+
+```text
 desafio-Front-end/
+│
 ├── public/
-│   └── ...                 # Arquivos públicos e imagens
+│   └── ...                     # Imagens e arquivos públicos
 │
 ├── src/
+│   │
 │   ├── app/
-│   │   ├── layout.tsx      # Layout principal da aplicação
-│   │   ├── page.tsx        # Página inicial (/)
-│   │   └── globals.css     # Estilos globais
+│   │   ├── layout.tsx          # Layout principal
+│   │   ├── page.tsx            # Página inicial (/)
+│   │   └── globals.css         # Estilos globais
 │   │
 │   └── components/
+│       │
 │       ├── header/
 │       │   ├── header.tsx
 │       │   └── ...
@@ -93,19 +110,50 @@ desafio-Front-end/
 ├── package.json
 ├── tsconfig.json
 └── README.md
+```
 
- 
+### Organização das páginas
+
+A pasta `app` é responsável pelas páginas e rotas da aplicação.
+
+```text
+src/app/
+├── layout.tsx
+├── page.tsx
+└── globals.css
+```
+
+* `layout.tsx` → define o layout compartilhado da aplicação.
+* `page.tsx` → representa a página inicial, acessível pela rota `/`.
+* `globals.css` → contém os estilos globais.
+
+### Organização dos componentes
+
+Os componentes são separados em suas próprias pastas para facilitar a organização e manutenção do projeto.
+
+```text
+src/components/
+├── header/
+├── sideNav/
+└── cards/
+```
+
+* `header` → componente responsável pelo cabeçalho.
+* `sideNav` → componente responsável pela navegação lateral.
+* `cards` → componentes responsáveis pela exibição dos cards.
 
 ## Aprendizados
 
-Durante o desenvolvimento, este projeto tem como foco o aprimoramento de:
+Este projeto está sendo utilizado para aprimorar conhecimentos em:
 
-* Organização de projetos com Next.js;
-* Criação e reutilização de componentes React;
-* Tipagem com TypeScript;
-* Estilização e construção de layouts;
-* Desenvolvimento de interfaces responsivas;
-* Uso do Git e GitHub para versionamento.
+* Next.js e App Router;
+* React;
+* TypeScript;
+* Componentização;
+* CSS Modules;
+* Responsividade;
+* Organização de código;
+* Git e GitHub.
 
 ## Autor
 
