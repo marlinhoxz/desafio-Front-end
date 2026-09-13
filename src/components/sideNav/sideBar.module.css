@@ -71,6 +71,23 @@
   border-radius: 10px;
 }
 
+
+
+.notification {
+  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 100;
+  background: var(--color-primary);
+  padding: 1px 4px;
+  border: 1px solid var(--color-primary);
+  border-radius: 50%;
+  color: #fff
+}
+
+
+
+
 .temperatura {
   display: flex;
   flex-direction: column;

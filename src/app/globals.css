@@ -4,32 +4,28 @@
   box-sizing: border-box;
 }
 
-
 :root {
-  /* Fundo e Superfícies (Neutros Quentes) */
   --bg-primary: #f9f6ee;
   --bg-card: #ffffff;
   --bg-secondary: #f2ede4;
 
-  /* Cores Primárias e Destaques Quentes */
   --color-primary: #c8532b;
   --color-primary-dark: #a33e1d;
   --color-accent-wine: #853027;
 
-  /* Categorias e Badges */
-  --color-sun-yellow: #F3D88F;
+  --color-sun-yellow: #f3d88f;
   --color-badge-arrival: #e27d5b;
   --color-badge-wifi: #4f6d9a;
   --color-badge-breakfast: #bd5c6b;
 
-  /* Tipografia e Elementos Escuros */
   --text-primary: #2a2725;
   --text-secondary: #78726a;
   --btn-dark: #201e1c;
   --border: #0000001f;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
   color: #201e1c;
 }

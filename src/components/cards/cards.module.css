@@ -1,0 +1,343 @@
+.containerCards {
+  height: 500px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  padding-left: clamp(20px, 20vw, 300px);
+  position: relative;
+}
+
+.card1 {
+  background: var(--bg-card);
+  width: 400px;
+  height: 370px;
+  border-radius: 10px;
+  padding: 10px;
+  transform: perspective(1000px) rotateY(3deg) rotateX(-2deg) rotate(-4deg);
+  box-shadow: 0 12px 15px rgba(0, 0, 0, 0.089);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 6px;
+  border-bottom: 1px dashed var(--border);
+}
+
+.info1 {
+  font-family: var(--font-dm-mono);
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.info1 > p {
+  font-size: 12px;
+}
+
+.info1Sub {
+  font-family: var(--font-dm-mono);
+  color: var(--text-secondary);
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.info1Sub > p {
+  font-size: 12px;
+}
+
+.info1Sub > h2 {
+  font-size: 16px;
+  font-weight: normal;
+  color: var(--text-primary);
+}
+
+.info2 {
+  margin: 15px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  justify-content: center;
+  border-bottom: 1px dashed var(--border);
+  padding-bottom: 10px;
+}
+
+.infoCheking > dt,
+.chekingSub > dt {
+  font-family: var(--font-dm-sans);
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.infoCheking > dd,
+.chekingSub > dd {
+  font-family: var(--font-dm-sans);
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.dd {
+  font-family: var(--font-fraunces);
+  font-size: 30px;
+  color: var(--text-primary);
+}
+
+.gastos {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-left: 0;
+  gap: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.315);
+}
+
+.gastoItem {
+  font-family: var(--font-dm-sans);
+  color: var(--text-secondary);
+  display: flex;
+  justify-content: space-between;
+}
+
+.preco {
+  font-size: 13px;
+  color: var(--text-primary);
+}
+
+.totalPaid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.total {
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.total > p {
+  font-family: var(--font-dm-sans);
+  letter-spacing: 3px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.total > span {
+  font-family: var(--font-fraunces);
+  font-size: 24px;
+  color: var(--text-primary);
+}
+
+.paymentMeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.paymentMeta > p {
+  font-family: var(--font-dm-sans);
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.card2 {
+  position: absolute;
+  z-index: 10;
+  bottom: clamp(20px, 8vw, 70px);
+  right: clamp(20px, 30vw, 500px);
+  background: linear-gradient(220deg, #db5f36, #85271d);
+  width: 400px;
+  height: 370px;
+  border-radius: 10px;
+  padding: 10px;
+  overflow: hidden;
+  transform: rotate(3deg);
+  box-shadow: 0 3px 15px #db5f36c0;
+}
+
+.card2Info {
+  border-top: 1px dashed #fff;
+  padding: 10px;
+  padding-top: 15px;
+}
+
+.card2Info > p {
+  font-family: var(--font-dm-sans);
+  font-size: 12px;
+  color: #f1e9e9;
+}
+
+.textPrincipal {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-family: var(--font-fraunces);
+  font-size: 24px;
+}
+
+.textPrincipal > p {
+  color: #eeec82;
+}
+
+.textPrincipal > h2 {
+  font-family: var(--font-fraunces);
+  font-weight: lighter;
+  color: #fff;
+}
+
+.subText {
+  padding-top: 50px;
+}
+
+.subText > p {
+  font-family: var(--font-dm-sans);
+  color: #f1e9e9;
+  font-size: 12px;
+}
+
+.subText > h3 {
+  font-family: var(--font-fraunces);
+  color: #f1e9e9;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.img {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+@media (max-width: 1700px) {
+  .containerCards {
+    height: clamp(390px, 40vw, 460px);
+    padding-left: clamp(20px, 12vw, 200px);
+  }
+
+  .card1,
+  .card2 {
+    width: clamp(320px, 30vw, 380px);
+    height: clamp(290px, 30vw, 350px);
+  }
+
+  .card2 {
+    right: clamp(20px, 22vw, 320px);
+    bottom: clamp(15px, 6vw, 60px);
+  }
+}
+
+@media (max-width: 1400px) {
+  .containerCards {
+    height: clamp(390px, 40vw, 460px);
+    padding-left: clamp(20px, 12vw, 200px);
+  }
+
+  .card1,
+  .card2 {
+    width: clamp(320px, 30vw, 380px);
+    height: clamp(290px, 30vw, 370px);
+  }
+
+  .card2 {
+    right: clamp(20px, 22vw, 140px);
+    bottom: clamp(15px, 6vw, 60px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .containerCards {
+    height: auto;
+    min-height: 460px;
+    padding-left: clamp(20px, 8vw, 100px);
+  }
+
+  .card1,
+  .card2 {
+    width: clamp(280px, 45vw, 360px);
+    height: clamp(260px, 40vw, 340px);
+  }
+
+  .card2 {
+    right: clamp(10px, 15vw, 200px);
+    bottom: clamp(10px, 6vw, 50px);
+  }
+}
+
+@media (max-width: 900px) {
+  .containerCards {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 40px 20px;
+    gap: 60px;
+  }
+
+  .card1 {
+    position: relative;
+    transform: none;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    min-height: 340px;
+  }
+
+  .card2 {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+    margin-top: 10px;
+    transform: none;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    min-height: 320px;
+    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media (max-width: 480px) {
+  .containerCards {
+    padding: 24px 16px;
+    gap: 40px;
+  }
+
+  .card1,
+  .card2 {
+    padding: 8px;
+  }
+
+  .info2 {
+    gap: 24px;
+  }
+
+  .infoCheking > time,
+  .chekingSub > time {
+    font-size: 20px;
+  }
+
+  .total > span {
+    font-size: 20px;
+  }
+
+  .textPrincipal {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 20px;
+  }
+
+  .subText {
+    padding-top: 30px;
+  }
+}
