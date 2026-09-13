@@ -65,18 +65,36 @@ Abra http://localhost:3000 no navegador para visualizar o projeto.
 
 ## Estrutura do projeto
 
-A aplicação utiliza a estrutura do Next.js, com a organização de páginas e componentes sendo desenvolvida conforme a evolução do desafio.
-
-```text
 desafio-Front-end/
 ├── public/
+│   └── ...                 # Arquivos públicos e imagens
+│
 ├── src/
-│   └── app/
+│   ├── app/
+│   │   ├── layout.tsx      # Layout principal da aplicação
+│   │   ├── page.tsx        # Página inicial (/)
+│   │   └── globals.css     # Estilos globais
+│   │
+│   └── components/
+│       ├── header/
+│       │   ├── header.tsx
+│       │   └── ...
+│       │
+│       ├── sideNav/
+│       │   ├── sideBar.tsx
+│       │   └── ...
+│       │
+│       └── cards/
+│           ├── cards.tsx
+│           └── ...
+│
+├── .gitignore
+├── next.config.ts
 ├── package.json
+├── tsconfig.json
 └── README.md
-```
 
-> A estrutura pode ser ajustada conforme novos componentes, estilos e funcionalidades forem adicionados.
+ 
 
 ## Aprendizados
 
