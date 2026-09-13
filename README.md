@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Desafio Front-end
 
-## Getting Started
+Projeto desenvolvido como parte de um desafio de front-end, com o objetivo de colocar em prática conceitos de desenvolvimento web, componentização e construção de interfaces utilizando Next.js.
 
-First, run the development server:
+## Sobre o projeto
+
+Este projeto está sendo desenvolvido para praticar e aprimorar habilidades em desenvolvimento front-end, explorando a criação de uma interface organizada, responsiva e com foco na experiência do usuário.
+
+A proposta é transformar o desafio proposto em uma aplicação funcional, aplicando boas práticas de estruturação de componentes e estilização.
+
+## Tecnologias utilizadas
+
+* [Next.js](https://nextjs.org/)
+* React
+* TypeScript
+* CSS / CSS Modules
+* Git e GitHub
+
+## Funcionalidades
+
+> Esta seção será atualizada conforme o desenvolvimento do projeto.
+
+* [ ] Implementação da interface proposta pelo desafio
+* [ ] Layout responsivo
+* [ ] Componentização da interface
+* [ ] Ajustes de acessibilidade
+* [ ] Refinamento visual e de experiência do usuário
+
+## Como executar o projeto
+
+### Pré-requisitos
+
+Antes de começar, você precisa ter instalado:
+
+* Node.js
+* npm, yarn, pnpm ou bun
+
+### Instalação
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/marlinhoxz/desafio-Front-end.git
+```
+
+Entre na pasta do projeto:
+
+```bash
+cd desafio-Front-end
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Execute o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra http://localhost:3000 no navegador para visualizar o projeto.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Estrutura do projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+A aplicação utiliza a estrutura do Next.js, com a organização de páginas e componentes sendo desenvolvida conforme a evolução do desafio.
 
-## Learn More
+```text
+desafio-Front-end/
+├── public/
+├── src/
+│   └── app/
+├── package.json
+└── README.md
+```
 
-To learn more about Next.js, take a look at the following resources:
+> A estrutura pode ser ajustada conforme novos componentes, estilos e funcionalidades forem adicionados.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Aprendizados
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Durante o desenvolvimento, este projeto tem como foco o aprimoramento de:
 
-## Deploy on Vercel
+* Organização de projetos com Next.js;
+* Criação e reutilização de componentes React;
+* Tipagem com TypeScript;
+* Estilização e construção de layouts;
+* Desenvolvimento de interfaces responsivas;
+* Uso do Git e GitHub para versionamento.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Autor
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Desenvolvido por **Marlon**.
+
+* GitHub: [@marlinhoxz](https://github.com/marlinhoxz)
