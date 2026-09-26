@@ -26,10 +26,10 @@ Durante o desenvolvimento, estou colocando em prática conceitos como:
 
 ## Funcionalidades
 
-* [ ] Implementação da interface proposta pelo desafio
+* [x] Implementação da interface proposta pelo desafio
 * [ ] Layout responsivo
-* [ ] Componentização da interface
-* [ ] Interações da interface
+* [x] Componentização da interface
+* [x] Interações da interface
 * [ ] Ajustes de acessibilidade
 * [ ] Refinamento visual
 
