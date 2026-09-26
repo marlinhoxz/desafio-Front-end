@@ -15,6 +15,11 @@ type itemProps = {
   href: string;
 };
 
+type SideBarProps = {
+  isActive: boolean;
+  setIsActive: (value: boolean) => void;
+};
+
 const navItems: itemProps[] = [
   {
     item: "You Stay",
@@ -57,10 +62,9 @@ const navItems: itemProps[] = [
   },
 ];
 
-export default function SideBar() {
+export default function SideBar({ isActive, setIsActive }: SideBarProps) {
   const pathname = usePathname();
   const [desenvolvido, setDesenvolvido] = useState<string | null>(null);
-  const [isActive, setIsActive] = useState(false);
 
   useEffect(() => {
     document.body.style.overflow = desenvolvido ? "hidden" : "";
@@ -72,17 +76,6 @@ export default function SideBar() {
 
   return (
     <>
-      {!isActive && (
-        <button
-          onClick={() => {
-            console.log("cliquei");
-            setIsActive(true);
-          }}
-          className={s.openModal}
-        >
-          <Menu />
-        </button>
-      )}
       <nav className={`${s.navContainer} ${isActive ? s.active : ""}`}>
         {isActive && (
           <div className={s.overlay} onClick={() => setIsActive(false)} />
@@ -111,6 +104,7 @@ export default function SideBar() {
                       <Link
                         href={href}
                         className={`${s.navIten} ${linkAtivo ? s.active : ""}`}
+                        onClick={() => setIsActive(false)}
                       >
                         <div className={s.navIcon}>
                           <Image src={icon} width={20} height={20} alt="Svg" />
@@ -125,7 +119,10 @@ export default function SideBar() {
                     ) : (
                       <button
                         className={s.navIcon}
-                        onClick={() => setDesenvolvido(item)}
+                        onClick={() => {
+                          setDesenvolvido(item);
+                          setIsActive(false);
+                        }}
                       >
                         <div className={s.navIcon}>
                           <Image src={icon} width={20} height={20} alt="Svg" />
@@ -154,28 +151,23 @@ export default function SideBar() {
             </footer>
           </section>
         </div>
-
-        {desenvolvido && (
-          <div className={s.modalOverlay} onClick={() => setDesenvolvido(null)}>
-            <div
-              className={s.modalContent}
-              onClick={(e) => e.stopPropagation()}
-            >
-              <h2 className={s.modalTitle}>Em Desenvolvimento</h2>
-              <p className={s.modalDescription}>
-                Área de <span>{desenvolvido}</span> ainda está em
-                desenvolvimento
-              </p>
-              <button
-                className={s.modalButton}
-                onClick={() => setDesenvolvido(null)}
-              >
-                Fechar
-              </button>
-            </div>
-          </div>
-        )}
       </nav>
+      {desenvolvido && (
+        <div className={s.modalOverlay} onClick={() => setDesenvolvido(null)}>
+          <div className={s.modalContent} onClick={(e) => e.stopPropagation()}>
+            <h2 className={s.modalTitle}>Em Desenvolvimento</h2>
+            <p className={s.modalDescription}>
+              Área de <span>{desenvolvido}</span> ainda está em desenvolvimento
+            </p>
+            <button
+              className={s.modalButton}
+              onClick={() => setDesenvolvido(null)}
+            >
+              Fechar
+            </button>
+          </div>
+        </div>
+      )}
     </>
   );
 }
