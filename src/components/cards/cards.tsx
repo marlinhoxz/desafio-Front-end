@@ -38,9 +38,9 @@ const reservations = [
 
 export default function Cards() {
   return (
-    <section className={s.containerCards} aria-label="Reservations">
+    <article className={s.containerCards} aria-label="Reservations">
       {reservations.map((res) => (
-        <article key={res.receipt.receiptNumber} className={s.cardWrapper}>
+        <aside key={res.receipt.receiptNumber} className={s.cardWrapper}>
           <section className={s.card1} aria-label="Receipt">
             <header className={s.info}>
               <div className={s.info1}>
@@ -131,8 +131,8 @@ export default function Cards() {
               </div>
             </header>
           </aside>
-        </article>
+        </aside>
       ))}
-    </section>
+    </article>
   );
 }

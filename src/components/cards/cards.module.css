@@ -237,7 +237,7 @@
 @media (max-width: 1400px) {
   .containerCards {
     height: clamp(390px, 40vw, 460px);
-    padding-left: clamp(20px, 12vw, 200px);
+    padding-left: clamp(20px, 12vw, 150px);
   }
 
   .card1,

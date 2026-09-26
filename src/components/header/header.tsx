@@ -1,8 +1,14 @@
-import s from "./header.module.css";
 
+
+import s from "./header.module.css";
 export default function Header() {
+
+  
+
+
   return (
-    <header className={s.headerContainer}>
+    <header className={`${s.headerContainer}`}>
+      
       <div className={s.apresentcao}>
         <p>BOOKING - CONFIRMED</p>
         <h2>

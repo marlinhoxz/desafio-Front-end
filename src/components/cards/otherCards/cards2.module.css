@@ -1,0 +1,182 @@
+.container {
+  padding: 40px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.asideContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  align-items: stretch;
+  width: 100%;
+  gap: 20px;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.infoContainer[data-type="arrival"] {
+  --card-color: #a83e3e;
+}
+
+.infoContainer[data-type="wifi"] {
+  --card-color: #3b5bdb;
+}
+
+.infoContainer[data-type="breakfast"] {
+  --card-color: #c2477a;
+}
+
+.headerCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+}
+
+.headerCard > div {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+}
+
+.imgContainer {
+  display: flex;
+  align-items: center;
+  background: var(--card-color);
+  padding: 7px;
+  border-radius: 10px;
+}
+
+.img {
+  filter: brightness(0) invert(1);
+}
+
+.headerTitle {
+  font-family: var(--font-dm-mono);
+  color: var(--card-color);
+  letter-spacing: 1.9px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.headerNumber {
+  font-family: var(--font-fraunces);
+  color: var(--card-color);
+  font-size: 22px;
+}
+
+.checkInInfo {
+  padding-top: 4px;
+  padding-bottom: 12px;
+}
+
+.checkInInfo > h2 {
+  font-family: var(--font-fraunces);
+  color: black;
+  font-weight: 500;
+  font-size: 25px;
+  
+}
+
+.checkInInfo > time {
+  display: block;
+  color: var(--text-secondary);
+  font-weight: 500;
+  font-size: 12px;
+  font-family: var(--font-dm-mono);
+}
+
+.HeaderDescription {
+  color: var(--text-secondary);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: var(--font-dm-sans);
+ 
+}
+
+.location {
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-family: var(--font-dm-mono);
+  margin: 4px 0 0;
+}
+
+.moreWifi {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.wifiBord {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.wifiBord > span {
+  font-family: var(--font-dm-mono);
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: var(--text-secondary);
+}
+
+.wifiBord > p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-dm-mono);
+  font-size: 13px;
+  color: black;
+  font-weight: 500;
+  margin: 0;
+}
+
+.copyBtn {
+  font-size: 10px;
+  font-family: var(--font-dm-mono);
+  letter-spacing: 0.5px;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.copyBtn:hover {
+  color: black;
+}
+
+@media (max-width: 1700px) {
+  .asideContainer {
+    grid-template-columns: repeat(3, 400px);
+  }
+}
+
+@media (max-width: 1440px) {
+  .asideContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .asideContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
