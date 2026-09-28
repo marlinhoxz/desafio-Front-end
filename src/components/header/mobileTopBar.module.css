@@ -1,0 +1,47 @@
+.mobileTopBar {
+  display: none;
+}
+
+.mobileLogo {
+  display: flex;
+  align-items: center;
+}
+
+.mobileLogoText {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+
+.mobileLogoTop {
+  font-family: var(--font-fraunces);
+  font-weight: 500;
+  color: var(--color-primary-dark);
+  font-size: 24px;
+}
+
+.mobileLogoBottom {
+  font-family: var(--font-fraunces);
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.openMenu {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.445);
+  padding: 5px 15px;
+  background: #ffffff3f;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  .mobileTopBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.288);
+  }
+}

@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Image from "next/image";
 import s from "./cards2.module.css";
@@ -104,7 +104,6 @@ export default function CardsTwo() {
               <p className={s.location}>{card.location}</p>
             )}
             <p className={s.HeaderDescription}>{card.description}</p>
-
 
             {card.type === "wifi" && (
               <div className={s.moreWifi}>

@@ -1,4 +1,3 @@
-
 .headerContainer {
   width: 100%;
   height: 150px;
@@ -48,10 +47,10 @@
 }
 
 .btn1:hover {
-  background: #ffffff00 ;
+  background: #ffffff00;
 }
 .btn2:hover {
-  background: #535151bd ;
+  background: #535151bd;
 }
 
 .btn2 {
@@ -65,35 +64,61 @@
   cursor: pointer;
 }
 
+@media (max-width: 1000px) {
+  .headerContainer {
+    padding: clamp(12px, 2.5vw, 20px);
+  }
+}
 
 @media (max-width: 800px) {
-    .headerContainer {
-      flex-wrap: wrap;
-      flex-direction: column;
-      align-items: self-start;
-      padding: 10px;
-    }
-    .apresentcao > p{
-      font-size: 16px;
-    }
+  .headerContainer {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: self-start;
+    padding: 10px;
+  }
+  .apresentcao > p {
+    font-size: 16px;
+  }
 
-    .apresentcao > h2 {
-      font-size: 40px;
-    }
+  .apresentcao > h2 {
+    font-size: 40px;
+  }
 
-    .buttons {
-      display: flex;
-      align-self: center;
-      gap: 40px;
-    }
+  .buttons {
+    display: flex;
+    align-self: center;
+    gap: 40px;
+  }
 
-    .btn1 {
-      padding: 10px 30px;
-    }
+  .btn1 {
+    padding: 10px 30px;
+  }
 
-    .btn2 {
-      padding: 10px 30px;
-    }
+  .btn2 {
+    padding: 10px 30px;
+  }
+}
 
-    
+@media (max-width: 480px) {
+  .headerContainer {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .apresentcao > h2 {
+    font-size: 26px;
+  }
+
+  .buttons {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .btn1,
+  .btn2 {
+    flex: 1;
+    padding: 10px 12px;
+    text-align: center;
+  }
 }

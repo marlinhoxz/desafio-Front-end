@@ -26,15 +26,11 @@ export const metadata: Metadata = {
   description: "Iniciando o Projeto",
 };
 
-
-
 type childrenProps = {
-  children: React.ReactNode
-}
+  children: React.ReactNode;
+};
 
-
-
-export default function RootLayout({children}: childrenProps) {
+export default function RootLayout({ children }: childrenProps) {
   return (
     <html
       lang="pt-BR"
